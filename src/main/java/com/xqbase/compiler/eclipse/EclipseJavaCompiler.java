@@ -1,3 +1,4 @@
+// package org.codehaus.plexus.compiler.eclipse;
 package com.xqbase.compiler.eclipse;
 
 /**
@@ -89,6 +90,7 @@ public class EclipseJavaCompiler
         throws CompilerException
     {
 
+        // added by xqbase-compiler-eclipse
         if (config.getGeneratedSourcesDirectory() != null) {
         	config.getGeneratedSourcesDirectory().mkdirs();
         }
@@ -318,6 +320,7 @@ public class EclipseJavaCompiler
         {
             return CompilerOptions.VERSION_1_7;
         }
+        // added by xqbase-compiler-eclipse
         else if ( "1.8".equals( versionSpec ) )
         {
             return CompilerOptions.VERSION_1_8;
